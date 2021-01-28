@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import firebase from './firebase'
+import firebase from './firebase/firebase'
 
 firebase.firestore().collection('times').add({
   title: 'Rubiks Cube',
