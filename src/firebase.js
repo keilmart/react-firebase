@@ -1,11 +1,11 @@
-import * as firebase from "firebase/app";
+import firebase from "firebase/app";
+import '@firebase/storage';
 import "firebase/database";
 import '@firebase/firestore';
-import '@firebase/storage';
   
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
+  const firebaseConfig = {
     apiKey: "AIzaSyCGzxpRe_oZWapTQqV64xw_9GCI3W0lSSI",
     authDomain: "react-firebase-6f404.firebaseapp.com",
     projectId: "react-firebase-6f404",
@@ -18,8 +18,10 @@ import '@firebase/storage';
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-  const ComputerStorage = firebase.storage();
-  const Firestore = firebase.firestore();
+  export default firebase
 
-  export { ComputerStorage, fireFirestore};
+  // const computerStorage = firebase.storage();
+  // const computerFirestore = firebase.firestore();
+
+  // export { computerStorage, computerFirestore};
 

@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
+import firebase from './firebase'
 
-import fireStorage from './firebase'
-
-fireStorage.firestore().collection('times').add({
+firebase.firestore().collection('times').add({
   title: 'Rubiks Cube',
   time_seconds: 45
 })
@@ -16,7 +15,7 @@ function App() {
   );
 }
 
-// connect to firebase, recieve the information back in app.js //
+// connect to firebase, recieve the information back in app.js // - FINISHED //
 // figure out roughly, what the app will do, and how many compoenents/files within components you will need //
 // set up the basic pages for the compoents, connect them all together in the proper way //
 // call to firebase, where some default response will be and get a response back //
