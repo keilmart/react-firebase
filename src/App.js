@@ -1,18 +1,28 @@
-import React from 'react';
+
+import React, { Component } from 'react';
 import './App.css';
-import firebase from './firebase/firebase'
+import Footer from './Components/Footer.js';
+import LandingPage from './Components/LandingPage.js';
+import firebase from './Services/firebase'
 
 firebase.firestore().collection('times').add({
   title: 'Rubiks Cube',
   time_seconds: 45
 })
 
-function App() {
+
+class App extends Component {
+  render() {
   return (
-    <div className="App">
-      <h1>computers</h1>
-    </div>
+    <React.Fragment>
+      <div className='App'>
+        <h1>computers</h1>
+        <LandingPage/>
+        <Footer/>
+      </div>
+    </React.Fragment>
   );
+  }
 }
 
 // connect to firebase, recieve the information back in app.js // - FINISHED //

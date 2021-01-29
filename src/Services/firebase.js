@@ -1,7 +1,7 @@
 import firebase from "firebase/app";
 import '@firebase/storage';
-import "firebase/database";
 import '@firebase/firestore';
+import "firebase/database";
   
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -18,10 +18,7 @@ import '@firebase/firestore';
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
+  
   export default firebase
 
-  // const computerStorage = firebase.storage();
-  // const computerFirestore = firebase.firestore();
-
-  // export { computerStorage, computerFirestore};
 
